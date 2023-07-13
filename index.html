@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Compressor</title>
+    <!-- <script scr="min_heap.js" defer></script>
+    <script src="huffmanEncoder.js"></script> -->
+    <script src="maxHeap.js" type="module"></script>
+    <script src="huffmanEncoding.js" type="module" ></script>
+    <script src="script.js" type="module" ></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar"> 
+        <h1>Text File Compressor</h1>
+    </nav>
+
+    <div class="container">
+        
+        <div id="div1">
+            <h2>Upload File Here</h2>
+            <img src="imgs/upload.png" class="img" alt="">
+            <form method="post" enctype="multipart/form-data" class="form" id="fileform">
+                <input type="file" id="uploadedFile">
+            </form>/
+        </div>
+
+        
+        <div id="div2">
+            <h2>Select Action</h2>
+            <img src="imgs/download.png" alt="" class="img">
+            <div id="action_div">
+                <button type="button" class="btn" id="encode">Compress</button>
+                <button type="button" class="btn" id="decode">Decompress</button>
+            </div>
+        </div>
+
+        <div id="div3">
+            <span>Result will be displayed Here</span>
+        </div>
+    </div>
+</body>
+</html>
